@@ -1,13 +1,26 @@
 body {
-  margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 0 50px;
 }
 
-/* You can add custom styling for nav links, spacing, etc. */
-.navbar .nav-link {
-  color: white;
+.logo {
+  height: 50px;
 }
-.navbar .navbar-brand img {
-  height: 50px; /* adjust as needed */
+
+.bg-boardroom {
+  background-color: #133B40;
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+}
+
+nav {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
 }
