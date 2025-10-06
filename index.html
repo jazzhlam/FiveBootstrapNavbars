@@ -3,51 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bootstrap Navbars Exercise</title>
+  <title>Five Bootstrap Navbars</title>
 
   <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <!-- Bootstrap Icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-  />
-  <!-- Your custom CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navbar 1 (you will build here) -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid px-0" style="background-color: #133B40;">
-      <div class="container">
-        <ul class="nav justify-content-start">
-          <li class="nav-item">
-            <a class="navbar-brand" href="#">
-              <i class="bi bi-instagram"></i>
-            </a>
-          </li>
-        </ul>
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a href="#"><img src="boardroom-logo.png" alt="Logo" /></a>
-          </li>
-        </ul>
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <button class="btn btn-dark">Menu</button>
-          </li>
+  <!-- Navbar 1: Boardroom style -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-boardroom mb-5">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="nav-link text-white" href="#"><i class="bi bi-instagram fs-4"></i></a>
+      <a href="#"><img src="boardroom-logo.png" alt="Logo" class="logo" /></a>
+      <button class="btn btn-dark">Menu</button>
+    </div>
+  </nav>
+
+  <!-- Navbar 2: Simple centered brand -->
+  <nav class="navbar navbar-expand-lg bg-light mb-5 shadow-sm">
+    <div class="container justify-content-center">
+      <a class="navbar-brand fw-bold text-uppercase" href="#">Centered Brand</a>
+    </div>
+  </nav>
+
+  <!-- Navbar 3: Brand + links -->
+  <nav class="navbar navbar-expand-lg bg-primary navbar-dark mb-5">
+    <div class="container">
+      <a class="navbar-brand" href="#">BrandName</a>
+      <div class="collapse navbar-collapse show">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- scripts -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-  ></script>
+  <!-- Navbar 4: Logo left, search center, icons right -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm mb-5">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MyShop</a>
+      <form class="d-flex mx-auto w-50">
+        <input class="form-control me-2" type="search" placeholder="Search" />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <div>
+        <a href="#" class="text-dark me-3"><i class="bi bi-person fs-5"></i></a>
+        <a href="#" class="text-dark"><i class="bi bi-cart fs-5"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navbar 5: Dark gradient with dropdown -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">GradientNav</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar5">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbar5" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Web Design</a></li>
+              <li><a class="dropdown-item" href="#">Hosting</a></li>
+              <li><a class="dropdown-item" href="#">SEO</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
