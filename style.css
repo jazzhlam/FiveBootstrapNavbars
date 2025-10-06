@@ -1,26 +1,58 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0 0 50px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-.logo {
-  height: 50px;
-}
-
+/* Boardroom */
 .bg-boardroom {
-  background-color: #133B40;
+  background-color: #133b40;
+}
+.boardroom-logo {
+  max-height: 70px;
+  width: auto;
 }
 
-.bg-gradient-dark {
-  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+/* Morning Brew */
+.morning-logo {
+  max-height: 60px;
+  width: auto;
+}
+.morning-title {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 
-nav {
-  border-radius: 10px;
-  overflow: hidden;
+/* Buzz’s */
+.bg-buzz {
+  background-color: #3c5062;
+}
+.buzz-logo {
+  max-height: 70px;
+  width: auto;
 }
 
-.navbar-nav .nav-link:hover {
+/* Aloha Beer */
+.aloha-logo {
+  max-height: 60px;
+  width: auto;
+}
+.navbar-light .nav-link {
+  color: #000 !important;
+}
+
+/* Duke’s */
+.bg-dukes {
+  background-color: #157173;
+}
+.dukes-logo {
+  max-height: 70px;
+  width: auto;
+}
+
+/* General tweaks */
+.nav-link {
+  font-size: 0.95rem;
+}
+.nav-link:hover {
   text-decoration: underline;
 }
